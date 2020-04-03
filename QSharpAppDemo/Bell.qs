@@ -15,6 +15,8 @@
 
         for (test in 1..count) {
             Set(initial, qubit);
+            H(qubit);
+            
             let res = M(qubit);
 
             // Count the number of ones we saw:
